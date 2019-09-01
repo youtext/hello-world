@@ -1,18 +1,98 @@
-<!DOCTYPE html>
-
+﻿<!doctype html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+<meta charset="utf-8">
+<title>在线文本编辑器 方便快捷使用文档word</title>
+
+<link rel="stylesheet" type="text/css" href="dist/bootstrap.css">
+<link href="dist/summernote.css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="dist/summernote.js"></script>
+<script src="dist/lang/summernote-zh-CN.js"></script>    <!-- 中文-->
+
+<style>
+	.m{ width: 800px; margin-left: auto; margin-right: auto; }
+</style>
+<body style="background-image:url(bg.jpg)"; background-size:100%,100%> <!-- bgsound-->
+<script>
+$(function(){
+ $('.summernote').summernote({
+        height: 200,
+        tabsize: 2,
+        lang: 'zh-CN'
+    });
+});
+</script>
+
 </head>
 
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<div class="m">		
+	<div class="summernote">请输入你的文本 来源灵感◕‿-｡</div>
+	<div class="summernote">请输入你的文本 来源灵感｡◕‿◕｡<br>说明：<br>
+	  1.NUM0代表数值0<br>
+	  2.Left Bracket代表左括号<br>
+	  3.Backslash代表反斜线\<br>
+	  4.快捷键支持中英文状态下输入<br>
+	  5.输入的代码不支持语法高亮<br>
+	  6.支持常见浏览器和上下拖动文本框<br>
+      7.问题反馈交流群：<a href="https://jq.qq.com/?_wv=1027&k=5xLR4R5" target="_blank"><font color="#000000">323101056 </font></a> <br>
+	  8.本站依开放源代码并适当修改构建而成 <br>
+	  9.如感觉对你有所帮助，请考虑赞助 <br>
+	  10.合理休息 理性工作 <br>
+	</div>
+</div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<script type="text/javascript">
+var now=(new Date()).getHours();
+if(now>0&&now<=6){
+document.write("午夜好骚年，快睡觉去，妹纸等你久了会不耐烦的哦...");
+}else if(now>6&&now<=11){
+document.write("早上好骚年，昨夜运动那么长时间还这么早起床，真爷们...");
+}else if(now>11&&now<=14){
+document.write("中午好骚年，停下手中的工作，快去吃饭晚了就没的吃了...");
+}else if(now>14&&now<=18){
+document.write("下午好骚年，累了一上午了，快去休息喝杯茶...");
+}else{
+document.write("晚上好骚年，快睡觉吧别忙了，明天的日头照样红...");
+}
+</script><!-- 网页时间段提示语 -->
+<div class="bottomCopyright">
+<p style="font-family:微软雅黑, 'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', 宋体;font-size:12px;text-align:center;color:#dddddd;background-color:#333333;">
+<font color="#FFFFFF">Copyright © 版权所有 | 友情链接：</font><a href="http://openpic.github.io" target="_blank"><font color="#FFFFFF">免费图床 </font></a><a href="http://opensay.github.io" target="_blank"> <font color="#FFFFFF">免费Markdown笔记 </font></a><a href="http://ferrssr.github.io" target="_blank"><font color="#FFFFFF">免费ssr </font></a> <a href="
+https://wpa.qq.com/msgrd?v=3&uin=2638570227&site=qq&menu=yes" target="_blank"><font color="#FFFFFF"> 广告合作</font></a> 
+</p>
+</div>
+<script>
+$(function(){
+$(".fhdb").click(function(){
+$("body,html").animate({scrollTop:0},1000);
+return false;
+});});  
+</script>
+<style>
+.kfbox{ position:fixed;right:10px;top:370px;z-index:999;width:94px;}
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+.kf_qq {height:108px; background-position:0 0; position:relative;}
+.kf_qq a{ position:absolute;width:94px;height:108px;top:0;left:0;}
+.kf_diy{height:28px;background-position: 0 -161px;margin-top: 5px;font-size:14px;text-align:center;line-height:26px;}
+.kf_diy a{color:#666 !important;font-family:Microsoft Yahei;}
+.kf_diy a:hover{color:#2ba4ce}
+*html .kfbox {position: absolute;top:expression(eval(document.documentElement.scrollTop));
+}</style>
+<div class="kfbox">
+
+
+<div class="kf_diy">
+<a class="fhdb" href="#" onclick="return false;"><font color="#FF0000"> <b>⇪返回顶部</b></font></a> 
+</div>
+
+</div>
 
 </body>
 </html>
